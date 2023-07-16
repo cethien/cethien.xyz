@@ -17,31 +17,29 @@ const { pageTitle } = Astro.props;
 	@tailwind base;
 	@layer base {
 		body {
-			@apply dark:bg-gray-800 bg-white dark:text-white text-black;
+			@apply dark:bg-gray-800 bg-white dark:text-white text-black grid grid-rows-[auto_1fr] gap-4 h-screen;
 		}
 	}
 </style>
 
 <App {pageTitle}>
-	<div>
-		<header
-			class="flex justify-evenly shadow-lg dark:shadow-none px-2 py-1 dark:bg-gray-900"
+	<header
+		class="flex justify-evenly shadow-lg dark:shadow-none px-2 py-1 dark:bg-gray-900"
+	>
+		<a
+			href="/"
+			class="p-2 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-cyan-600 to-purple-800 dark:from-yellow-400 dark:via-cyan-400 dark:to-purple-300"
 		>
-			<a
-				href="/"
-				class="p-2 text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-cyan-600 to-purple-800 dark:from-yellow-400 dark:via-cyan-400 dark:to-purple-300"
-			>
-				{HEADER_TITLE}
-			</a>
-			<nav class="flex items-center gap-2">
-				<GithubLinkButton />
-				<ThemeToggleButton />
-			</nav>
-		</header>
-		<main class="pt-4 px-2">
-			<slot />
-		</main>
-	</div>
+			{HEADER_TITLE}
+		</a>
+		<nav class="flex items-center gap-2">
+			<GithubLinkButton />
+			<ThemeToggleButton />
+		</nav>
+	</header>
+	<main class="px-2">
+		<slot />
+	</main>
 </App>
 
 <script>
