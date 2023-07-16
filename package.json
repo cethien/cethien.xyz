@@ -1,0 +1,17 @@
+{
+  "name": "cethien.xyz",
+  "version": "0.0.0",
+  "private": true,
+  "author": "cethien <borislaw.sotnikow@gmx.de>",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.19.7",
+    "@astrojs/tailwind": "^4.0.0",
+    "astro": "^2.8.3",
+    "astro-compress": "^1.1.49",
+    "tailwindcss": "^3.0.24"
+  }
+}
