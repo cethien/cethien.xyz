@@ -5,13 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "launch dev server",
+            "name": "launch web dev server",
             "type": "node-terminal",
             "request": "launch",
-            "command": "./node_modules/.bin/astro dev"
+            "command": "./node_modules/.bin/turbo dev --filter=web"
         },
         {
-            "name": "explore localhost",
+            "name": "explore web @ localhost",
             "type": "firefox",
             "request": "launch",
             "url": "http://localhost:3000/",
@@ -20,10 +20,10 @@
     ],
     "compounds": [
         {
-            "name": "DEV",
+            "name": "DEV:web",
             "configurations": [
-                "launch dev server",
-                "explore localhost"
+                "launch web dev server",
+                "explore web @ localhost"
             ],
             "stopAll": true
         }
