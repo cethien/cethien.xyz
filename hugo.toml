@@ -1,0 +1,4 @@
+baseURL      = 'https://cethien.xyz/'
+languageCode = 'de-DE'
+title        = 'Cethien.xyz'
+theme        = "my-theme"

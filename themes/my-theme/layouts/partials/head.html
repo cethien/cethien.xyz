@@ -1,0 +1,16 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<!-- HTMX (https://htmx.org/) -->
+<!-- hyperscript (https://hyperscript.org) -->
+<script src="https://unpkg.com/htmx.org@1.9.6"></script>
+<script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+<title>
+	{{ if .IsHome }}
+		{{ site.Title }}
+	{{ else }}
+		{{ printf "%s | %s" .Title
+			site.Title
+		}}
+	{{ end }}
+</title>
+{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}
