@@ -6,3 +6,6 @@ title        = 'Cethien.xyz'
 name    = 'Home'
 pageRef = '/'
 weight  = 10
+
+[module]
+hugoVersion.min = "v0.115.0"
