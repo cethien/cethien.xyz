@@ -1,3 +1,3 @@
 # my homepage
 
-i really need to work on this
+well, at least I ported it over

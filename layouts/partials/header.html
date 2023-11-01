@@ -1,0 +1,22 @@
+<div
+	class="p-2 text-3xl font-extrabold dark:bg-gradient-to-r dark:from-yellow-500 dark:via-cyan-500 dark:to-purple-500 dark:bg-clip-text dark:text-transparent"
+>
+	{{ site.Title }}
+</div>
+<nav class="text-2xl">
+	<button
+		class="flex items-center"
+		_="on click
+        toggle .dark on document.documentElement
+        	if document.documentElement match .dark
+        	    set localStorage.theme to 'dark'
+        	else
+        	    set localStorage.theme to 'light'
+        	end
+        end"
+	>
+		<span
+			class="icon-[material-symbols--dark-mode] dark:icon-[material-symbols--light-mode]"
+		></span>
+	</button>
+</nav>
