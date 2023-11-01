@@ -1,7 +1,0 @@
-name        = 'my-theme'
-description = 'my theme'
-
-# If the theme has a single author
-[author]
-name     = 'cethien'
-homepage = 'https://cethien.xyz'

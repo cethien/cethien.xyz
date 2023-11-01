@@ -1,4 +1,8 @@
 baseURL      = 'https://cethien.xyz/'
 languageCode = 'de-DE'
 title        = 'Cethien.xyz'
-theme        = "my-theme"
+
+[[menus.main]]
+name    = 'Home'
+pageRef = '/'
+weight  = 10

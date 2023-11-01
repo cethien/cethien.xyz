@@ -7,14 +7,16 @@
 		{{ partial "head.html" . }}
 	</head>
 	<body
-		class="grid h-screen grid-rows-[auto_1fr_auto] px-2 dark:bg-slate-800 dark:text-white"
+		class="grid h-screen select-none grid-rows-[auto_1fr_auto] px-2 dark:bg-slate-800 dark:text-white"
 	>
 		<header
 			class="flex flex-row items-center justify-between border-b-2 py-2 lg:justify-evenly"
 		>
 			{{ partial "header.html" . }}
 		</header>
+
 		<main class="py-2">{{ block "main" . }}{{ end }}</main>
+
 		<footer
 			class="flex flex-row items-center justify-between border-t-2 py-2 lg:justify-evenly"
 		>
