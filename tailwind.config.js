@@ -7,5 +7,11 @@ module.exports = {
 	theme: {
 		extend: {}
 	},
-	plugins: [addDynamicIconSelectors()]
+	plugins: [
+		addDynamicIconSelectors(),
+		function ({ addVariant }) {
+			addVariant('child', '& > *');
+			addVariant('child-hover', '& > *:hover');
+		}
+	]
 };

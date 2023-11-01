@@ -3,18 +3,20 @@
 >
 	{{ site.Title }}
 </div>
-<nav class="flex flex-row gap-4 text-3xl">
+<nav
+	class="child-hover:scale-125 child:duration-150 child:ease-in-out flex flex-row gap-4 text-3xl"
+>
 	<a
 		href="http://github.com/cethien/cethien.xyz"
 		target="_blank"
 		rel="noopener noreferrer"
-		class="flex items-center duration-150 ease-in-out hover:scale-125"
+		class="flex items-center"
 	>
 		<span class="icon-[mdi--github]"></span>
 	</a>
 
 	<button
-		class="flex items-center duration-150 ease-in-out hover:scale-125"
+		class="flex items-center"
 		_="on click
         toggle .dark on document.documentElement
         	if document.documentElement match .dark
