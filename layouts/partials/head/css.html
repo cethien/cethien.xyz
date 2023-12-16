@@ -1,4 +1,4 @@
-{{- with resources.Get "css/main.min.css" }}
+{{- with resources.Get "main.css" | resources.PostCSS }}
 	{{- if eq hugo.Environment
 		"development"
 	}}

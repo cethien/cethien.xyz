@@ -1,7 +1,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<!-- hyperscript (https://hyperscript.org) -->
-<script src="https://unpkg.com/hyperscript.org@0.9.11"></script>
+{{- with resources.Get "favicon.svg" }}
+	<link rel="shortcut icon" href="{{ .RelPermalink }}" type="image/svg" />
+{{- end }}
 <title>
 	{{ if .IsHome }}
 		{{ site.Title }}
@@ -11,4 +12,5 @@
 		}}
 	{{ end }}
 </title>
-{{ partialCached "head/css.html" . }} {{ partialCached "head/js.html" . }}
+{{ partialCached "head/css.html" . }}
+{{ partialCached "head/js.html" . }}
