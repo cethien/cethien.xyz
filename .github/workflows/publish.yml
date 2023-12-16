@@ -15,7 +15,7 @@ jobs:
               uses: cloudflare/pages-action@v1
               with:
                 apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-                accountId: 8b813ddd5531f714ca1002f289e424ab
+                accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
                 projectName: cethien
                 directory: ./public
                 branch: main
