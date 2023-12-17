@@ -7,8 +7,7 @@ declare global {
 	}
 }
 
-window.Alpine = Alpine
-
+window.Alpine = Alpine;
 Alpine.plugin(persist);
 Alpine.start();
 

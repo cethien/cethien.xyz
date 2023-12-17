@@ -1,4 +1,5 @@
-.vscode
-.husky
 .git
+.github
+.husky
+.vscode
 node_modules

@@ -1,5 +1,15 @@
-dev:
-	@hugo server & pnpm tailwindcss --watch --minify -i ./styles.css -o ./assets/css/main.min.css
+default: clean
+
+clean:
+	@rm -rf node_modules/ public/ && \
+	bun install
 
 format:
-	@pnpm prettier --write ./**/*.{html,js,json,md}
+	@bun run format
+
+build:
+	@hugo
+
+dev:
+	@hugo server
+
