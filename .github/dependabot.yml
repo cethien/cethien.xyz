@@ -10,8 +10,8 @@ updates:
     schedule:
       interval: weekly
     allow:
-      - dependency-name: "htmx.org"
-      - dependency-name: "hyperscript.org"
+      - dependency-name: "alpinejs"
+      - dependency-name: "@alpinejs/persist"
       - dependency-name: "tailwindcss"
       - dependency-name: "postcss"
       - dependency-name: "autoprefixer"
