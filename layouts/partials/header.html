@@ -3,19 +3,21 @@
 >
 	{{ site.Title }}
 </div>
-<nav
-	class="flex flex-row gap-4 text-3xl child:duration-150 child:ease-in-out child-hover:scale-125"
->
+<nav class="flex flex-row gap-4 text-3xl">
 	<a
 		href="http://github.com/cethien/cethien.xyz"
 		target="_blank"
 		rel="noopener noreferrer"
-		class="flex items-center"
+		class="flex items-center rounded-full p-2 hover:scale-125"
 	>
 		<span class="icon-[mdi--github]"></span>
 	</a>
 
-	<button class="flex items-center" x-data @click="$store.theme.toggle()">
+	<button
+		class="flex items-center rounded-full p-2 hover:scale-125"
+		x-data
+		@click="$store.darkMode.toggle()"
+	>
 		<span
 			class="icon-[material-symbols--dark-mode] dark:icon-[material-symbols--light-mode]"
 		></span>

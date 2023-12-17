@@ -8,6 +8,7 @@ declare global {
 }
 
 window.Alpine = Alpine;
+
 Alpine.plugin(persist);
 Alpine.start();
 

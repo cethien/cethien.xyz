@@ -1,7 +1,5 @@
-{{- with resources.Get "main.css" | resources.PostCSS }}
-	{{- if eq hugo.Environment
-		"development"
-	}}
+{{- with resources.Get "css/main.css" | postCSS }}
+	{{- if eq hugo.Environment "development" }}
 		<link rel="stylesheet" href="{{ .RelPermalink }}" />
 	{{- else }}
 		{{- with . | minify | fingerprint }}
