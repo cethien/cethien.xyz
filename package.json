@@ -2,7 +2,7 @@
 	"scripts": {
 		"format": "prettier --write .",
 		"commitlint": "commitlint --edit $1",
-		"build:html": "minify src/index.html > dist/index.html",
+		"build:html": "mkdir dist && minify src/index.html > ./dist/index.html",
 		"build:css": "tailwindcss -i src/styles.css -o dist/main.min.css --minify",
 		"build:js": "bun build src/main.ts --outfile=dist/main.min.js --target=browser --minify-syntax --minify-whitespace",
 		"build": "bun run build:html && bun run build:css && bun run build:js && cp static/* dist/"
