@@ -7,6 +7,6 @@ declare global {
 }
 window.theme = theme
 
-if (localStorage.getItem('theme') === 'dark') {
+if (window.theme.getTheme() === 'dark') {
 	document.documentElement.classList.add('dark')
 }
