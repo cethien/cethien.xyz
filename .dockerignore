@@ -1,0 +1,13 @@
+.git/
+.github/
+.svelte-kit/
+.vscode/
+build/
+node_modules/
+
+.gitignore
+.commitlintrc
+.prettierignore
+.prettierrc
+Dockerfile
+README.md

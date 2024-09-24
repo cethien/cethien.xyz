@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://json.schemastore.org/lefthook.json
+
+commit-msg:
+  commands:
+    commitlint:
+      run: bun run commitlint
