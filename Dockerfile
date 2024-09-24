@@ -3,10 +3,6 @@ WORKDIR /app
 COPY . .
 RUN bun install && bun run build
 
-FROM busybox:latest AS runner
-RUN adduser -D static
-USER static
-WORKDIR /home/static
-COPY --from=builder /app/dist .
-EXPOSE 3000
-CMD ["busybox", "httpd", "-f", "-v", "-p", "3000"]
+FROM caddy:latest AS runner
+COPY --from=builder /app/dist /srv
+ENTRYPOINT [ "caddy", "file-server", "--root", "/srv" ]
