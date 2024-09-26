@@ -4,5 +4,5 @@ COPY . .
 RUN bun install && bun run build
 
 FROM caddy:latest AS runner
-COPY --from=builder /app/dist /srv
+COPY --from=builder /app/build /srv
 ENTRYPOINT [ "caddy", "file-server", "--root", "/srv" ]

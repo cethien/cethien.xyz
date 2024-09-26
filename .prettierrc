@@ -4,6 +4,18 @@
 	"singleQuote": true,
 	"trailingComma": "none",
 	"semi": false,
+	"singleAttributePerLine": true,
 	"printWidth": 80,
-	"plugins": ["@prettier/plugin-pug", "prettier-plugin-tailwindcss"]
+	"plugins": [
+		"prettier-plugin-svelte",
+		"prettier-plugin-tailwindcss"
+	],
+	"overrides": [
+		{
+			"files": "*.svelte",
+			"options": {
+				"parser": "svelte"
+			}
+		}
+	]
 }
