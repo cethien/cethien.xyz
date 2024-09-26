@@ -1,3 +1,10 @@
 {
-	"recommendations": ["bradlc.vscode-tailwindcss", "antfu.iconify"]
+	"recommendations": [
+		"bradlc.vscode-tailwindcss",
+		"antfu.iconify",
+		"svelte.svelte-vscode",
+		"ardenivanov.svelte-intellisense",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint"
+	]
 }
