@@ -1,1 +1,1 @@
-# (cethien.xyz)[https://cethien.xyz]
+# [https://cethien.xyz](cethien.xyz)
