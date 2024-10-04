@@ -1,12 +1,12 @@
-const { addDynamicIconSelectors } = require('@iconify/tailwind')
-const typography = require('@tailwindcss/typography')
+import { addDynamicIconSelectors } from '@iconify/tailwind'
+import typography from '@tailwindcss/typography'
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	darkMode: 'class',
 	theme: {
 		extend: {}
 	},
-	plugins: [addDynamicIconSelectors(), typography]
+	plugins: [addDynamicIconSelectors(), typography()]
 }
