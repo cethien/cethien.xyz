@@ -1,8 +1,33 @@
 <article class="prose dark:prose-invert xl:prose-xl">
-    <h2>Hi 👋</h2>
-    <section class="select-text">
-        <p>this is a placeholder until i'm bothered to do... anything</p>
-        <p>heres a random pic:</p>
-        <img src="https://picsum.photos/800/400" alt="random" />
-    </section>
+	<h1>Hi there!</h1>
+	<p>this is a website i made for no reason.</p>
+	<p>my links:</p>
+
+	<div
+		class="flex w-min items-stretch justify-center gap-4 text-center font-mono text-3xl font-semibold"
+	>
+		<a
+			href="https://github.com/cethien"
+			target="_blank"
+			rel="noopener noreferrer"
+			class=" rounded-md bg-zinc-600 px-4 py-2 text-white no-underline hover:bg-sky-700"
+		>
+			<div class="flex items-center gap-2">
+				<span class="icon-[mdi--github]"></span>
+				GitHub
+			</div>
+		</a>
+
+		<a
+			href="https://linkedin.com/in/borislaw-sotnikow/"
+			target="_blank"
+			rel="noopener noreferrer"
+			class="rounded-md bg-sky-600 px-4 py-2 text-white no-underline hover:bg-sky-700 dark:bg-sky-600"
+		>
+			<div class="flex items-center gap-2">
+				<span class="icon-[mdi--linkedin]"></span>
+				LinkedIn
+			</div>
+		</a>
+	</div>
 </article>
